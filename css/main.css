@@ -25,9 +25,8 @@ body {
   perspective: 1px;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective-origin-x: 100%;
   height: 100vh;
-  width: 100%; }
+  width: 100vw; }
 
 .parallax-layer {
   position: absolute;
@@ -42,7 +41,7 @@ body {
   transform: translateZ(0); }
 
 .parallax-back {
-  transform: translateZ(-0.5px) scale(1.5); }
+  transform: translateZ(-5px) scale(5); }
 
 nav {
   position: fixed;
@@ -82,6 +81,8 @@ nav {
 
 .main {
   padding-left: 240px;
+  max-width: 1240px;
+  position: relative;
   /* ==========================================================================
      Browser Upgrade Prompt
      ========================================================================== */ }
@@ -102,7 +103,6 @@ nav {
     border-radius: 4px;
     padding: 10px;
     color: rgba(255, 255, 255, 0.8);
-    text-shadow: 1px 1px rgba(118, 152, 152, 0.25);
     border-width: 4px;
     border-style: solid;
     background-color: rgba(0, 0, 0, 0.8); }
